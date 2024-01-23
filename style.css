@@ -97,7 +97,7 @@ body {
   right: 20px;
   opacity: 1;
 }
-.d {
+.d, .thtop {
   display: none;
 }
 #top {
