@@ -1,0 +1,107 @@
+body {
+    background-color: white;
+  }
+  #top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #logo {
+    height: 100px;
+    width: 100px;
+  }
+  h1, span, p {
+    color: #051923;
+    font-family: 'Raleway', sans-serif;
+  }
+  #rh {
+    width: 100%;
+    color: #051923;
+  }
+  .tbar {
+    color: #00A6FB;
+    font-family: 'Raleway', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  .dropdown a:hover {
+    text-decoration: underline;
+  }
+  .dropdown {
+    background-color: #00A6FB;
+    padding: 10px;
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .thtop {
+    position: relative;
+  }
+  .thtop:hover .dropdown {
+    opacity: 1;
+  }
+  .footer {
+    color: #00A6FB;
+  }
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #00A6FB;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.menu {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu:hover {
+    background-color: #0582CA;
+}
+
+.content {
+    margin-right: 0;
+    transition: margin-right 0.5s;
+    padding: 16px;
+}
+
+.menu-button {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+}
+@media (max-width: 800px) {
+  .menu-button {
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+}
+.d {
+  display: none;
+}
+#top {
+display: flex;
+justify-content: start;
+}
+}

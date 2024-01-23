@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kitchendeck | Your place for recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+  <link href="./style.css" rel="stylesheet">
+  <style>
+    #newrs {
+      text-align: center;
+      margin-right: 30%;
+    }
+    .post p {
+      font-weight: 400;
+      color: #051923;
+      font-family: 'Raleway', sans-serif;
+    }
+    .post h2 {
+      color: #051923;
+      font-family: 'Raleway', sans-serif;
+    }
+    .post img {
+      height: 300px;
+      width: 300px;
+      float: left;
+      margin-right: 10px;
+    }
+    .post {
+      height: 800px;
+      width: 600px;
+    }
+    #body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    .rvb {
+      border: 0px;
+      background-color: #00A6FB;
+      border-radius: 10px;
+      width: 200px;
+      height: 30px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0582CA;
+    }
+    @media (max-width: 800px) {
+      .post img {
+        float: none;
+      }
+      .post {
+        width: 300px;
+      }
+      #body {
+      display: flex;
+      flex-direction: column;
+      align-items: start; 
+      }
+      .menu-button {
+      font-size: 20px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      opacity: 1;
+    }
+    .d {
+      display: none;
+    }
+    #top {
+    display: flex;
+    justify-content: start;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="menu-container" id="menuContainer">
+    <a href="./about.html" class="menu"><span>About</span></a>
+    <a href="./recipe.html" class="menu"><span>Recipes</span></a>
+    <a href="./shop.html" class="menu"><span>Shop</span></a>
+    <a href="./contact.html" class="menu"><span>Contact</span></a>
+  </div>
+  <div id="top">
+    <a href="./index.html"><img id="logo" src="./assets/logo.png"></a>
+    <a class="d" href="./about.html"><h1 class="toptext">About</h1></a>
+    <div class="d" class="thtop">
+      <a href="./recipe.html"><h1 class="toptext">Recipes</h1></a>
+      <div class="dropdown">
+        <a href="./pasta.html"><span>Pasta</span></a>
+        <a href="./sauce.html"><span>Sauces</span></a>
+      </div>
+    </div>
+    <a class="d" href="./shop.html"><h1 class="toptext">Shop</h1></a>
+    <a class="d" href="./contact.html"><h1 class="toptext">Contact</h1></a>
+    <div class="menu-button" onclick="toggleMenu()">&#9776; <span>Menu</span></div>
+  </div>
+  <hr id="rh">
+  <div id="body">
+    <h1 id="newrs">New Recipes:</h1>
+    <div id="new">
+      <div class="post">
+        <a href="./recipes/bacon-alfredo-pasta.html"><img src="./assets/One-Pot-Bacon-Alfredo-Pasta-6.jpg">
+        <h2>Bacon Alfredo Pasta</h2></a>
+        <p>Indulge your taste buds with our savory Bacon Alfredo Pasta, a culinary delight that combines the rich flavors of smoky bacon and creamy Alfredo sauce. This pasta dish offers a perfect balance of velvety texture and bold taste, creating a symphony of flavors that will leave you craving more.</p>
+        <a href="./recipes/bacon-alfredo-pasta.html"><button class="rvb"><span>Click To View Full Recipe →</span></button></a>
+      </div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+    </div>
+  </div>
+  <div class="footer">
+
+  </div>
+  <script>
+    function toggleMenu() {
+        var menuContainer = document.getElementById("menuContainer");
+        var content = document.querySelector(".content");
+
+        if (menuContainer.style.right === "0px") {
+            menuContainer.style.right = "-250px";
+            content.style.marginRight = "0";
+        } else {
+            menuContainer.style.right = "0px";
+            content.style.marginRight = "250px";
+        }
+    }
+</script>
+</body>
+</html>

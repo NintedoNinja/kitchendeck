@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <title>Kitchendeck | Bacon Alfredo Pasta</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <style>
+        h1, #tbar, p {
+            color: #051923;
+            font-family: 'Raleway', sans-serif;
+            margin-right: 30%;
+            text-align: center;
+        }
+        #ititle {
+            color: #051923;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+        img {
+            height: 400px;
+        }
+        .img {
+            display: flex;
+            justify-content: center;
+            float: left;
+            margin-right: 10px;
+        }
+        #description {
+            width: 25%;
+            margin-right: 20px;
+        }
+        #thing {
+            display: flex;
+            justify-content: center;
+        }
+        #iimg {
+            margin: 0 auto;
+            text-align: center;
+            margin-right: 16%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container" id="menuContainer">
+        <a href="./about.html" class="menu"><span>About</span></a>
+        <a href="./recipe.html" class="menu"><span>Recipes</span></a>
+        <a href="./shop.html" class="menu"><span>Shop</span></a>
+        <a href="./contact.html" class="menu"><span>Contact</span></a>
+      </div>
+      <div id="top">
+        <a href="./index.html"><img id="logo" src="./assets/logo.png"></a>
+        <a class="d" href="./about.html"><h1 class="toptext">About</h1></a>
+        <div class="d" class="thtop">
+          <a href="./recipe.html"><h1 class="toptext">Recipes</h1></a>
+          <div class="dropdown">
+            <a href="./pasta.html"><span>Pasta</span></a>
+            <a href="./sauce.html"><span>Sauces</span></a>
+          </div>
+        </div>
+        <a class="d" href="./shop.html"><h1 class="toptext">Shop</h1></a>
+        <a class="d" href="./contact.html"><h1 class="toptext">Contact</h1></a>
+        <div class="menu-button" onclick="toggleMenu()">&#9776; <span>Menu</span></div>
+      </div>
+      <hr id="rh">
+    <div id="body">
+        <div id="tbar">
+            <span>
+                <a class="tbar" href="../index.html">Home</a>
+                 » 
+                <a class="tbar" href="../recipe.html">Recipes</a>
+                 » 
+                <a class="tbar" href="../pasta.html">Pasta</a>
+                 » 
+                <span><strong>Bacon Alfredo Pasta Recipe</strong></span>
+            </span>
+        </div>
+        <h1>Bacon Alfredo Pasta Recipe</h1>
+        <p>Published: January 22, 2024 · By Dhanvin Raneesh</p>
+        <div id="thing">
+            <div class="img">
+                <img src="../assets/One-Pot-Bacon-Alfredo-Pasta-6.jpg">
+            </div>
+            <div id="description">
+                <span>Imagine perfectly cooked al dente pasta strands generously coated in a luscious Alfredo sauce made from the finest cream, Parmesan cheese, and a hint of garlic. The addition of crispy, golden-brown bacon adds a delightful crunch and an irresistible smokiness that elevates the dish to new heights.</span>
+                <span><pre> </pre>Each bite of our Bacon Alfredo Pasta is a journey through layers of taste – from the silky smoothness of the Alfredo sauce to the robust, savory notes of the bacon. This dish is a celebration of comfort food at its finest, providing a satisfying and memorable dining experience.</span>
+                <span><pre> </pre>Whether you're a pasta aficionado or simply a lover of indulgent flavors, our Bacon Alfredo Pasta promises to be a culinary masterpiece that will leave you savoring every mouthful. Treat yourself to a plate of this exquisite creation and embark on a gastronomic adventure that tantalizes the senses and satisfies the soul.</span>
+                <br>
+            </div>
+        </div>
+        <div id="ingredients">
+            <h2 id="ititle">What You Need To Make This Recipe</h2>
+            <div id="iimg">
+                <img src="../assets/close-up-white-marble-textured-wall_53876-139849.avif.png">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        function toggleMenu() {
+            var menuContainer = document.getElementById("menuContainer");
+            var content = document.querySelector(".content");
+    
+            if (menuContainer.style.right === "0px") {
+                menuContainer.style.right = "-250px";
+                content.style.marginRight = "0";
+            } else {
+                menuContainer.style.right = "0px";
+                content.style.marginRight = "250px";
+            }
+        }
+    </script>
+</body>
+</html>

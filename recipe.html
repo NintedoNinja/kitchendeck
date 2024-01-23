@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitchendeck | Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <style>
+        h1, #tbar {
+            color: #051923;
+            font-family: 'Raleway', sans-serif;
+            margin-right: 30%;
+            text-align: center;
+        }
+        img {
+            width: 400px;
+        }
+        #img {
+            display: flex;
+            justify-content: center;
+            margin-right: 15%;
+        }
+        p {
+            font-weight: 400;
+            color: #051923;
+            font-family: 'Raleway', sans-serif;
+            width: 390px;
+        }
+        h2 {
+            text-align: center;
+            margin-right: 13%;
+            color: #051923;
+            font-family: 'Raleway', sans-serif;
+        }
+        .p {
+            display: flex;
+            justify-content: center;
+            margin-right: 13%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container" id="menuContainer">
+        <a href="./about.html" class="menu"><span>About</span></a>
+        <a href="./recipe.html" class="menu"><span>Recipes</span></a>
+        <a href="./shop.html" class="menu"><span>Shop</span></a>
+        <a href="./contact.html" class="menu"><span>Contact</span></a>
+      </div>
+      <div id="top">
+        <a href="./index.html"><img id="logo" src="./assets/logo.png"></a>
+        <a class="d" href="./about.html"><h1 class="toptext">About</h1></a>
+        <div class="d" class="thtop">
+          <a href="./recipe.html"><h1 class="toptext">Recipes</h1></a>
+          <div class="dropdown">
+            <a href="./pasta.html"><span>Pasta</span></a>
+            <a href="./sauce.html"><span>Sauces</span></a>
+          </div>
+        </div>
+        <a class="d" href="./shop.html"><h1 class="toptext">Shop</h1></a>
+        <a class="d" href="./contact.html"><h1 class="toptext">Contact</h1></a>
+        <div class="menu-button" onclick="toggleMenu()">&#9776; <span>Menu</span></div>
+      </div>
+      <hr id="rh">
+    <div id="body">
+        <div id="tbar">
+            <span>
+                <a class="tbar" href="./index.html">Home</a>
+                 » 
+                <span><strong>Recipes</strong></span>
+            </span>
+        </div>
+        <h1>Recipes</h1>
+        <div class="item">
+            <div id="img">
+                <a href="./pasta.html"><img src="./assets/many-types-raw-pasta-top-view-square-crop-italian-pasta-background-many-types-raw-pasta-top-view-square-crop-italian-pasta-246143245-transformed.webp">
+            </div>
+            <h2>Pasta</h2></a>
+            <div class="p">
+                <p>Indulge in the exquisite world of pasta, where culinary artistry meets comforting simplicity. Picture perfectly al dente strands, meticulously crafted to embrace a symphony of flavors and textures. Each pasta variety, from the classic spaghetti to the whimsical fusilli, is a canvas waiting to be adorned with savory sauces and delectable ingredients.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        function toggleMenu() {
+            var menuContainer = document.getElementById("menuContainer");
+            var content = document.querySelector(".content");
+    
+            if (menuContainer.style.right === "0px") {
+                menuContainer.style.right = "-250px";
+                content.style.marginRight = "0";
+            } else {
+                menuContainer.style.right = "0px";
+                content.style.marginRight = "250px";
+            }
+        }
+    </script>
+</body>
+</html>
